@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Lost & Found</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <img src="images/logo.jpeg" alt="StudentHub Portal Logo" width="80">
+        <h1>StudentHub Portal</h1>
+        <p>Your Gateway to Academic Services</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="overview.html">Overview</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="events.html">Events</a> |
+        <a href="hall-ticket.html">Hall Ticket</a> |
+        <a href="holidays.html">Holidays</a> |
+        <a href="lost-found.html" aria-current="page">Lost & Found</a> |
+        <a href="suggestions.html">Suggestions</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <main id="main-content">
+
+        <section>
+
+            <h2>Lost & Found</h2>
+
+            <p>
+                Report a lost or found item using the form below.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Report an Item</h2>
+
+            <article>
+
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="student-name">Student Name:</label><br>
+                        <input type="text" id="student-name" name="student-name" required>
+                    </p>
+
+                    <p>
+                        <label for="item-name">Item Name:</label><br>
+                        <input type="text" id="item-name" name="item-name" required>
+                    </p>
+
+                    <p>
+                        <label for="status">Status:</label><br>
+                        <select id="status" name="status">
+                            <option>Lost</option>
+                            <option>Found</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="description">Description:</label><br>
+                        <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit Report</button>
+                        <button type="reset">Reset</button>
+                    </p>
+
+                </form>
+
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h2>Instructions</h2>
+
+            <ul>
+                <li>Provide accurate item details.</li>
+                <li>Mention where the item was lost or found.</li>
+                <li>Contact the administration office for verification.</li>
+                <li>Carry your student ID while collecting an item.</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub Portal | Developed for Web Technology Practical</p>
+    </footer>
+
+</body>
+
+</html>

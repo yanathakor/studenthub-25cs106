@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Suggestions</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <a href="#main-content">Skip to Main Content</a>
+
+    <header>
+        <img src="images/logo.jpeg" alt="StudentHub Portal Logo" width="80">
+        <h1>StudentHub Portal</h1>
+        <p>Your Gateway to Academic Services</p>
+    </header>
+
+    <nav aria-label="Main Navigation">
+        <a href="index.html">Home</a> |
+        <a href="dashboard.html">Dashboard</a> |
+        <a href="overview.html">Overview</a> |
+        <a href="attendance.html">Attendance</a> |
+        <a href="assignments.html">Assignments</a> |
+        <a href="events.html">Events</a> |
+        <a href="hall-ticket.html">Hall Ticket</a> |
+        <a href="holidays.html">Holidays</a> |
+        <a href="lost-found.html">Lost & Found</a> |
+        <a href="suggestions.html" aria-current="page">Suggestions</a> |
+        <a href="login.html">Login</a>
+    </nav>
+
+    <main id="main-content">
+
+        <section>
+            <h2>Suggestions & Feedback</h2>
+
+            <p>
+                We value your feedback. Please share your suggestions to help
+                improve the StudentHub portal and campus services.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Submit Your Feedback</h2>
+
+            <article>
+
+                <form action="#" method="post">
+
+                    <p>
+                        <label for="student-name">Student Name:</label><br>
+                        <input
+                            type="text"
+                            id="student-name"
+                            name="student-name"
+                            placeholder="Enter your name"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="email">Email Address:</label><br>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required>
+                    </p>
+
+                    <p>
+                        <label for="category">Suggestion Category:</label><br>
+                        <select id="category" name="category">
+                            <option>Academic</option>
+                            <option>Events</option>
+                            <option>Facilities</option>
+                            <option>Website</option>
+                            <option>Other</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="feedback">Your Suggestion:</label><br>
+                        <textarea
+                            id="feedback"
+                            name="feedback"
+                            rows="6"
+                            cols="40"
+                            placeholder="Write your suggestion here..."
+                            required></textarea>
+                    </p>
+
+                    <p>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </p>
+
+                </form>
+
+            </article>
+
+        </section>
+
+        <aside>
+
+            <h2>Feedback Guidelines</h2>
+
+            <ul>
+                <li>Provide clear and constructive suggestions.</li>
+                <li>Avoid inappropriate language.</li>
+                <li>Include relevant details when reporting issues.</li>
+                <li>Your feedback helps improve StudentHub.</li>
+            </ul>
+
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 StudentHub Portal | Developed for Web Technology Practical</p>
+    </footer>
+
+</body>
+
+</html>
