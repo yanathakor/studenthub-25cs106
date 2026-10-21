@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub - UI Features</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================
+     NOTIFICATION BANNER
+========================= -->
+
+<div class="notification">
+    📢 Welcome to StudentHub!
+    <button onclick="closeNotification()">×</button>
+</div>
+
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<header>
+
+    <div class="logo">
+        StudentHub
+    </div>
+
+    <button class="hamburger" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav id="navMenu">
+
+        <a href="#home">Home</a>
+        <a href="#slider">Updates</a>
+        <a href="#faq">FAQ</a>
+        <a href="#about">About</a>
+
+        <button class="theme-btn" onclick="toggleTheme()">
+            🌙
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- =========================
+     HOME
+========================= -->
+
+<section id="home" class="hero">
+
+    <h1>Welcome to StudentHub</h1>
+
+    <p>
+        Your simple student portal for courses,
+        results, assignments and updates.
+    </p>
+
+    <button class="main-btn" onclick="openModal()">
+        View Student Info
+    </button>
+
+</section>
+
+
+<!-- =========================
+     IMAGE / CONTENT SLIDER
+========================= -->
+
+<section id="slider" class="section">
+
+    <h2>StudentHub Updates</h2>
+
+    <div class="slider">
+
+        <div class="slide active">
+            <h3>📚 Courses</h3>
+            <p>
+                Access your courses and study materials
+                from one place.
+            </p>
+        </div>
+
+        <div class="slide">
+            <h3>📝 Assignments</h3>
+            <p>
+                Check your assignments and submission
+                deadlines.
+            </p>
+        </div>
+
+        <div class="slide">
+            <h3>🎓 Results</h3>
+            <p>
+                View your semester results and academic
+                performance.
+            </p>
+        </div>
+
+        <button class="prev" onclick="changeSlide(-1)">
+            ❮
+        </button>
+
+        <button class="next" onclick="changeSlide(1)">
+            ❯
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FAQ
+========================= -->
+
+<section id="faq" class="section">
+
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq">
+
+        <button class="faq-question">
+            What is StudentHub?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                StudentHub is a student portal where
+                students can manage academic information.
+            </p>
+        </div>
+
+
+        <button class="faq-question">
+            How can I view my result?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Open the Results section to view your
+                semester marks and CGPA.
+            </p>
+        </div>
+
+
+        <button class="faq-question">
+            Can I check assignments?
+            <span>+</span>
+        </button>
+
+        <div class="faq-answer">
+            <p>
+                Yes. The Assignment section displays
+                available assignments and deadlines.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT
+========================= -->
+
+<section id="about" class="section about">
+
+    <h2>About StudentHub</h2>
+
+    <p>
+        StudentHub provides students with an easy way
+        to access courses, assignments, attendance,
+        results and other academic information.
+    </p>
+
+</section>
+
+
+<!-- =========================
+     MODAL POPUP
+========================= -->
+
+<div id="modal" class="modal">
+
+    <div class="modal-content">
+
+        <button class="close" onclick="closeModal()">
+            ×
+        </button>
+
+        <h2>Student Information</h2>
+
+        <p><strong>Name:</strong> Feni Kaila </p>
+        <p><strong>Roll No:</strong> 25DCE036</p>
+        <p><strong>Course:</strong> Computer Engineering</p>
+        <p><strong>Semester:</strong> 3</p>
+
+        <button class="main-btn" onclick="closeModal()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+    <p>© 2026 StudentHub | Student Portal</p>
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

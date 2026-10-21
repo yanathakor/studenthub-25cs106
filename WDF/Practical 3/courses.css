@@ -1,0 +1,474 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    transition:.3s;
+}
+
+body{
+    background:#C9E4CA;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar{
+    width:250px;
+    background:#364958;
+    color:#FFFFFF;
+    box-shadow:4px 0 15px rgba(0,0,0,.15);
+}
+
+.sidebar h2{
+    text-align:center;
+    padding:28px;
+    color:#C9E4CA;
+    font-size:30px;
+    border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    transition:.3s;
+}
+
+.sidebar ul li a{
+    display:block;
+    padding:18px 25px;
+    color:#FFFFFF;
+    text-decoration:none;
+    font-size:17px;
+}
+
+.sidebar ul li:hover,
+.sidebar .active{
+    background:#55828B;
+}
+
+/* ===========================
+   Main Section
+=========================== */
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#FFFFFF;
+    padding:18px 30px;
+    border-radius:18px;
+    box-shadow:0 10px 20px rgba(54,73,88,.12);
+}
+
+/* ===========================
+   Search Box
+=========================== */
+
+.search{
+    width:45%;
+    background:#F7FBF8;
+    border:2px solid #87BBA2;
+    border-radius:30px;
+    padding:12px 20px;
+}
+
+.search i{
+    color:#3B6064;
+}
+
+.search input{
+    width:88%;
+    border:none;
+    outline:none;
+    background:transparent;
+    margin-left:10px;
+    color:#364958;
+    font-size:16px;
+}
+
+/* ===========================
+   Profile
+=========================== */
+
+.profile{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#55828B;
+    color:#FFFFFF;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.profile:hover{
+    background:#3B6064;
+    transform:scale(1.08);
+}
+
+/* ===========================
+   Page Title
+=========================== */
+
+.title{
+    font-size:38px;
+    color:#364958;
+    margin:30px 0;
+    font-weight:700;
+}
+
+/* ===========================
+   Course Grid
+=========================== */
+
+.course-container{
+    display:grid;
+    grid-template-columns:repeat(3,280px);
+    justify-content:center;
+    gap:30px;
+    margin-top:20px;
+}
+
+/* ===========================
+   Course Card
+=========================== */
+
+.course-card{
+    width:280px;
+    height:250px;
+    background:#FFFFFF;
+    border:2px solid #87BBA2;
+    border-radius:20px;
+    padding:25px 20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(54,73,88,.12);
+    transition:.3s;
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+    border-color:#55828B;
+    box-shadow:0 18px 30px rgba(54,73,88,.22);
+}
+
+/* ===========================
+   Course Icon
+=========================== */
+
+.course-card i{
+    font-size:50px;
+    color:#55828B;
+    margin-bottom:18px;
+}
+
+.course-card:hover i{
+    color:#364958;
+    transform:scale(1.1);
+}
+
+/* ===========================
+   Course Title
+=========================== */
+
+.course-card h3{
+    color:#364958;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+/* ===========================
+   Course Description
+=========================== */
+
+.course-card p{
+    color:#3B6064;
+    font-size:16px;
+    line-height:24px;
+    margin-bottom:22px;
+}
+
+/* ===========================
+   View Button
+=========================== */
+
+.course-card a{
+    display:inline-block;
+    padding:10px 30px;
+    background:#55828B;
+    color:#FFFFFF;
+    text-decoration:none;
+    border-radius:25px;
+    font-size:15px;
+    font-weight:600;
+}
+
+.course-card a:hover{
+    background:#364958;
+    transform:scale(1.05);
+}
+
+/* ===========================
+   Card Hover Effects
+=========================== */
+
+.course-card:hover h3{
+    color:#55828B;
+}
+
+.course-card:hover p{
+    color:#364958;
+}
+
+/* ===========================
+   Smooth Scroll
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#C9E4CA;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#55828B;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#364958;
+}
+
+/* ===========================
+   Text Selection
+=========================== */
+
+::selection{
+    background:#55828B;
+    color:#FFFFFF;
+}
+
+/* ===========================
+   Fade Animation
+=========================== */
+
+.course-container{
+    animation:fadeIn .8s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* ===========================
+   Responsive (992px)
+=========================== */
+
+@media(max-width:992px){
+
+.container{
+    flex-direction:column;
+}
+
+.sidebar{
+    width:100%;
+}
+
+.header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.search{
+    width:100%;
+}
+
+.course-container{
+    grid-template-columns:repeat(2,280px);
+    justify-content:center;
+}
+
+}
+
+/* ===========================
+   Responsive (768px)
+=========================== */
+
+@media(max-width:768px){
+
+.main{
+    padding:20px;
+}
+
+.title{
+    font-size:32px;
+}
+
+.course-container{
+    grid-template-columns:1fr;
+    justify-items:center;
+}
+
+.course-card{
+    width:300px;
+    height:auto;
+}
+
+.course-card i{
+    font-size:45px;
+}
+
+.course-card h3{
+    font-size:22px;
+}
+
+.course-card p{
+    font-size:15px;
+}
+
+.course-card a{
+    padding:10px 25px;
+}
+
+}
+
+/* ===========================
+   Responsive (480px)
+=========================== */
+
+@media(max-width:480px){
+
+.sidebar h2{
+    font-size:24px;
+    padding:20px;
+}
+
+.sidebar ul li a{
+    padding:16px 20px;
+    font-size:15px;
+}
+
+.main{
+    padding:15px;
+}
+
+.header{
+    padding:15px;
+}
+
+.search{
+    width:100%;
+    padding:10px 15px;
+}
+
+.search input{
+    width:80%;
+    font-size:14px;
+}
+
+.profile{
+    width:50px;
+    height:50px;
+    font-size:20px;
+}
+
+.title{
+    font-size:28px;
+}
+
+.course-container{
+    grid-template-columns:1fr;
+}
+
+.course-card{
+    width:100%;
+    max-width:280px;
+    height:auto;
+    padding:20px;
+}
+
+.course-card i{
+    font-size:40px;
+}
+
+.course-card h3{
+    font-size:20px;
+}
+
+.course-card p{
+    font-size:14px;
+}
+
+.course-card a{
+    width:140px;
+    text-align:center;
+    font-size:14px;
+    padding:10px;
+}
+
+}
+
+/* ===========================
+   Extra Hover Effects
+=========================== */
+
+.course-card:hover{
+    background:#F7FBF8;
+}
+
+.course-card:hover a{
+    background:#364958;
+}
+
+.course-card:hover h3{
+    color:#55828B;
+}
+
+.course-card:hover i{
+    transform:rotate(8deg) scale(1.1);
+}
+

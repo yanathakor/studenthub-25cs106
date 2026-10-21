@@ -1,0 +1,337 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#C9E4CA,#87BBA2);
+}
+
+/* ===========================
+   Container
+=========================== */
+
+.container{
+    width:1000px;
+    height:600px;
+    background:#ffffff;
+    display:flex;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 40px rgba(54,73,88,.20);
+}
+
+/* ===========================
+   Left Side
+=========================== */
+
+.left{
+    width:45%;
+    background:linear-gradient(to bottom,#55828B,#364958);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.left h1{
+    font-size:42px;
+    margin-bottom:15px;
+    color:#C9E4CA;
+}
+
+.left h2{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#ffffff;
+}
+
+.left p{
+    text-align:center;
+    line-height:28px;
+    font-size:18px;
+    color:#C9E4CA;
+}
+
+/* ===========================
+   Right Side
+=========================== */
+
+.right{
+    width:55%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#F8FCF8;
+}
+
+form{
+    width:380px;
+}
+
+form h2{
+    text-align:center;
+    color:#364958;
+    margin-bottom:35px;
+    font-size:38px;
+}
+
+/* ===========================
+   Input Fields
+=========================== */
+
+form input{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    border:2px solid #87BBA2;
+    border-radius:12px;
+    font-size:16px;
+    background:#ffffff;
+    color:#364958;
+    transition:.3s;
+}
+
+form input::placeholder{
+    color:#7A8F92;
+}
+
+form input:focus{
+    border-color:#55828B;
+    box-shadow:0 0 8px rgba(85,130,139,.35);
+    outline:none;
+}
+
+/* ===========================
+   Forgot Password
+=========================== */
+
+.forgot{
+    text-align:right;
+    margin-bottom:25px;
+}
+
+.forgot a{
+    text-decoration:none;
+    color:#55828B;
+    font-weight:600;
+    transition:.3s;
+}
+
+.forgot a:hover{
+    color:#364958;
+}
+
+/* ===========================
+   Login Button
+=========================== */
+
+button{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:#55828B;
+    color:white;
+    font-size:20px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#364958;
+    transform:translateY(-3px);
+    box-shadow:0 8px 20px rgba(54,73,88,.25);
+}
+
+/* ===========================
+   Register Section
+=========================== */
+
+.register{
+    text-align:center;
+    margin-top:25px;
+    color:#364958;
+    font-size:16px;
+}
+
+.register a{
+    color:#55828B;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.register a:hover{
+    color:#3B6064;
+    text-decoration:underline;
+}
+
+/* ===========================
+   Smooth Transition
+=========================== */
+
+*{
+    transition:all .3s ease;
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#C9E4CA;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#55828B;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#364958;
+}
+
+/* ===========================
+   Responsive (992px)
+=========================== */
+
+@media(max-width:992px){
+
+.container{
+    width:90%;
+    height:auto;
+    flex-direction:column;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.left{
+    padding:50px 30px;
+}
+
+.right{
+    padding:40px 20px;
+}
+
+form{
+    width:100%;
+    max-width:400px;
+}
+
+}
+
+/* ===========================
+   Responsive (768px)
+=========================== */
+
+@media(max-width:768px){
+
+.left h1{
+    font-size:34px;
+}
+
+.left h2{
+    font-size:26px;
+}
+
+.left p{
+    font-size:16px;
+    line-height:26px;
+}
+
+form h2{
+    font-size:32px;
+}
+
+form input{
+    padding:14px;
+    font-size:15px;
+}
+
+button{
+    font-size:18px;
+}
+
+}
+
+/* ===========================
+   Responsive (480px)
+=========================== */
+
+@media(max-width:480px){
+
+.container{
+    width:95%;
+    border-radius:18px;
+}
+
+.left{
+    padding:35px 20px;
+}
+
+.right{
+    padding:30px 15px;
+}
+
+.left h1{
+    font-size:30px;
+}
+
+.left h2{
+    font-size:22px;
+}
+
+.left p{
+    font-size:15px;
+}
+
+form{
+    width:100%;
+}
+
+form h2{
+    font-size:28px;
+}
+
+form input{
+    padding:12px;
+    border-radius:10px;
+}
+
+button{
+    padding:14px;
+    font-size:17px;
+    border-radius:10px;
+}
+
+.register{
+    font-size:15px;
+}
+
+}
+
+/* ===========================
+   Text Selection
+=========================== */
+
+::selection{
+    background:#55828B;
+    color:#FFFFFF;
+}
