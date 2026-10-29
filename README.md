@@ -61,4 +61,4 @@ See `DEPLOYMENT.md` for full steps and `TESTING.md` for test cases.
 Change these passwords after the first login.
 
 ## Author
-**Feni Kaila** – B.Tech Computer Engineering, CHARUSAT
+**Yana Thakor** – B.Tech Computer Science Engineering, CHARUSAT
