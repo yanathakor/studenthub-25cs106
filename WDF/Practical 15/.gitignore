@@ -1,0 +1,12 @@
+# Credentials
+config.php
+
+# User uploads
+assignment_uploads/*
+!assignment_uploads/.gitkeep
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+*.log

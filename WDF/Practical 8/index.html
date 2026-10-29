@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>StudentHub Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="faq-panel" id="faqPanel">
+<h2>Frequently Asked Questions</h2>
+<div class="faq-item">
+<button onclick="toggleQuestion(this)">What is StudentHub?<span>+</span></button>
+<p>StudentHub is a platform where students can manage courses, assignments, attendance and results.</p>
+</div>
+<div class="faq-item">
+<button onclick="toggleQuestion(this)">How can I check my attendance?<span>+</span></button>
+<p>You can check your attendance from the Attendance page.</p>
+</div>
+<div class="faq-item">
+<button onclick="toggleQuestion(this)">Where can I see my results?<span>+</span></button>
+<p>Click the Results option from the sidebar.</p>
+</div>
+<div class="faq-item">
+<button onclick="toggleQuestion(this)">How can I contact the college?<span>+</span></button>
+<p>You can use the Contact page to send your query.</p>
+</div>
+</div>
+<div class="container">
+<div class="sidebar">
+<h2>StudentHub</h2>
+<ul>
+<li class="active"><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="assignment.html">Assignment</a></li>
+<li><a href="attendance.html">Attendance</a></li>
+<li><a href="result.html">Results</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="main">
+<div class="header">
+<div></div>
+<div class="buttons">
+<a href="login.html" class="login">Login</a>
+<a href="register.html" class="register">Register</a>
+<button class="faq-toggle" onclick="toggleFAQ()">
+<span class="faq-icon"><span></span><span></span><span></span></span>
+<span class="faq-arrow">▼</span>
+</button>
+</div>
+</div>
+<div class="cards">
+<div class="card">
+<i class="fa-solid fa-calendar-check"></i>
+<h3>Attendance</h3>
+<p>95%</p>
+</div>
+<div class="card">
+<i class="fa-solid fa-file-circle-xmark"></i>
+<h3>Assignment</h3>
+<p>2 Pending</p>
+</div>
+<div class="card">
+<i class="fa-solid fa-book-open"></i>
+<h3>Upcoming Test</h3>
+<p>5 Aug</p>
+</div>
+<div class="card">
+<i class="fa-solid fa-graduation-cap"></i>
+<h3>Courses</h3>
+<p>6 Enrolled</p>
+</div>
+</div>
+<div class="bottom">
+<div class="upcoming">
+<h2>Upcoming Details</h2>
+<ul>
+<li>✔ Java Practical Submission</li>
+<li>✔ HTML Project Presentation</li>
+<li>✔ Database Quiz</li>
+<li>✔ Internal Viva</li>
+</ul>
+</div>
+<div class="notice">
+<h2>Notice</h2>
+<p>Semester Examination starts from 20 August.</p>
+<hr>
+<p>Assignment Submission Last Date : 10 August</p>
+<hr>
+<p>College will remain closed on Sunday.</p>
+</div>
+</div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

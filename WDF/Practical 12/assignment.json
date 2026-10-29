@@ -1,0 +1,40 @@
+{
+    "taskList": [
+        {
+            "taskId": 101,
+            "courseName": "Web Development",
+            "taskDetails": "Design a responsive Student Registration Form using HTML and CSS.",
+            "submissionDate": "12 August 2026"
+        },
+        {
+            "taskId": 102,
+            "courseName": "Java Programming",
+            "taskDetails": "Create a Bank Management System using Java classes and objects.",
+            "submissionDate": "16 August 2026"
+        },
+        {
+            "taskId": 103,
+            "courseName": "Database Management",
+            "taskDetails": "Create tables and perform CRUD operations using SQL.",
+            "submissionDate": "21 August 2026"
+        },
+        {
+            "taskId": 104,
+            "courseName": "Computer Networks",
+            "taskDetails": "Prepare a report on OSI Model and TCP/IP Protocols.",
+            "submissionDate": "24 August 2026"
+        },
+        {
+            "taskId": 105,
+            "courseName": "Digital Electronics",
+            "taskDetails": "Design and explain basic logic gates with truth tables.",
+            "submissionDate": "27 August 2026"
+        },
+        {
+            "taskId": 106,
+            "courseName": "Cyber Security",
+            "taskDetails": "Prepare a presentation on common cyber security threats.",
+            "submissionDate": "30 August 2026"
+        }
+    ]
+}

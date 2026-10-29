@@ -1,0 +1,40 @@
+{
+    "courses": [
+        {
+            "id": 1,
+            "name": "Web Development",
+            "description": "HTML, CSS & JavaScript",
+            "icon": "fas fa-code"
+        },
+        {
+            "id": 2,
+            "name": "Java Programming",
+            "description": "Core Java Concepts",
+            "icon": "fas fa-laptop-code"
+        },
+        {
+            "id": 3,
+            "name": "Database",
+            "description": "SQL & MySQL",
+            "icon": "fas fa-database"
+        },
+        {
+            "id": 4,
+            "name": "Computer Network",
+            "description": "Networking Basics",
+            "icon": "fas fa-network-wired"
+        },
+        {
+            "id": 5,
+            "name": "Digital Electronics",
+            "description": "Logic Circuits",
+            "icon": "fas fa-microchip"
+        },
+        {
+            "id": 6,
+            "name": "Cyber Security",
+            "description": "Security Fundamentals",
+            "icon": "fas fa-shield-alt"
+        }
+    ]
+}

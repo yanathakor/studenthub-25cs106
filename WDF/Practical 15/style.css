@@ -1,0 +1,77 @@
+/* StudentHub - main stylesheet (also used by login & register pages) */
+:root { --primary:#4f46e5; --dark:#1e1b4b; --bg:#f3f4f6; --text:#1f2937; --ok:#16a34a; --bad:#dc2626; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; background: var(--bg); color: var(--text); }
+a { color: var(--primary); text-decoration: none; }
+
+/* Layout */
+.sidebar { position: fixed; top: 0; left: 0; width: 240px; height: 100vh; background: var(--dark); color: #fff; padding: 20px 15px; overflow-y: auto; transition: transform .25s; z-index: 10; }
+.sidebar h2 { font-size: 22px; margin-bottom: 18px; }
+.user-box { background: rgba(255,255,255,.1); padding: 10px; border-radius: 8px; margin-bottom: 18px; display: flex; flex-direction: column; gap: 4px; }
+.badge { font-size: 12px; background: var(--primary); width: fit-content; padding: 2px 8px; border-radius: 10px; }
+.sidebar nav a { display: block; color: #c7d2fe; padding: 10px 12px; border-radius: 8px; margin-bottom: 4px; }
+.sidebar nav a:hover, .sidebar nav a.active { background: var(--primary); color: #fff; }
+.sidebar nav a.logout { margin-top: 20px; background: rgba(220,38,38,.2); color: #fecaca; }
+.content { margin-left: 240px; padding: 30px; }
+.page-title { margin-bottom: 20px; font-size: 26px; }
+.menu-btn { display: none; position: fixed; top: 10px; left: 10px; z-index: 20; background: var(--primary); color: #fff; border: 0; font-size: 20px; padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+
+/* Cards */
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin: 20px 0; }
+.card { background: #fff; padding: 20px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.07); text-align: center; }
+.card .num { font-size: 32px; font-weight: 700; color: var(--primary); }
+.card .num.low { color: var(--bad); }
+
+/* Tables */
+.table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,.07); margin-bottom: 25px; }
+.table th { background: var(--primary); color: #fff; text-align: left; }
+.table th, .table td { padding: 11px 14px; border-bottom: 1px solid #e5e7eb; }
+.table tr:hover td { background: #f9fafb; }
+.tag { padding: 3px 10px; border-radius: 12px; font-size: 13px; color: #fff; }
+.tag.ok { background: var(--ok); } .tag.bad { background: var(--bad); }
+
+/* Forms */
+.panel { background: #fff; padding: 22px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,.07); margin-bottom: 25px; }
+.panel.narrow { max-width: 520px; }
+.panel h3 { margin-bottom: 14px; }
+.grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+label { display: block; margin: 12px 0 5px; font-weight: 600; font-size: 14px; }
+input, select, textarea { width: 100%; padding: 10px; border: 1px solid #d1d5db; border-radius: 8px; font-size: 15px; font-family: inherit; }
+input:focus, select:focus, textarea:focus { outline: 2px solid var(--primary); border-color: transparent; }
+input.invalid { border-color: var(--bad); }
+.check { display: flex; align-items: center; gap: 8px; font-weight: 400; }
+.check input { width: auto; }
+.row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.row input, .row select { flex: 1 1 150px; width: auto; }
+.search { max-width: 350px; margin-bottom: 15px; }
+form.inline { display: inline; }
+
+/* Buttons */
+.btn { display: inline-block; background: var(--primary); color: #fff; border: 0; padding: 10px 18px; border-radius: 8px; cursor: pointer; font-size: 15px; margin-top: 14px; }
+.btn:hover { opacity: .9; }
+.btn.small { padding: 6px 12px; font-size: 13px; margin: 0; }
+.btn.danger { background: var(--bad); }
+.btn.gray { background: #6b7280; }
+.row .btn { margin-top: 0; }
+
+/* Alerts */
+.alert { padding: 12px 16px; border-radius: 8px; margin-bottom: 15px; }
+.alert.success { background: #dcfce7; color: #166534; }
+.alert.error { background: #fee2e2; color: #991b1b; }
+
+/* Login / Register */
+.auth-body { display: flex; align-items: center; justify-content: center; min-height: 100vh; background: linear-gradient(135deg, #4f46e5, #7c3aed); padding: 20px; }
+.auth-card { background: #fff; padding: 32px; border-radius: 16px; width: 100%; max-width: 400px; box-shadow: 0 10px 30px rgba(0,0,0,.25); }
+.auth-card h1 { text-align: center; margin-bottom: 4px; }
+.auth-card .btn { width: 100%; }
+.muted { color: #6b7280; margin: 6px 0 14px; text-align: center; }
+.center { text-align: center; margin-top: 16px; }
+
+/* Responsive */
+@media (max-width: 800px) {
+  .sidebar { transform: translateX(-100%); }
+  .sidebar.open { transform: translateX(0); }
+  .content { margin-left: 0; padding: 60px 15px 20px; }
+  .menu-btn { display: block; }
+  .table { display: block; overflow-x: auto; }
+}

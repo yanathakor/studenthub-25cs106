@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub Register</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="register-box">
+
+        <h1>Create Your Account</h1>
+
+        <form method="POST"
+              action="register.php"
+              onsubmit="return validateRegisterForm()">
+
+            <div class="form-group">
+
+                <div class="field">
+                    <input type="text"
+                           name="fullName"
+                           id="fullName"
+                           placeholder="Full Name"
+                           required>
+
+                    <span id="s"></span>
+                </div>
+
+                <div class="field">
+                    <input type="email"
+                           name="email"
+                           id="email"
+                           placeholder="Email Address"
+                           required>
+
+                    <span id="s1"></span>
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="field">
+                    <input type="text"
+                           name="mobile"
+                           id="mobile"
+                           placeholder="Mobile No."
+                           required>
+
+                    <span id="s2"></span>
+                </div>
+
+                <div class="field">
+
+                    <select name="gender"
+                            id="gender"
+                            required>
+
+                        <option value="">Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+
+                <div class="field password-box">
+
+                    <input type="password"
+                           name="password"
+                           id="password"
+                           placeholder="Password"
+                           required>
+
+                    <span id="s3"></span>
+
+                </div>
+
+                <div class="field password-box">
+
+                    <input type="password"
+                           name="confirmPassword"
+                           id="confirmPassword"
+                           placeholder="Confirm Password"
+                           required>
+
+                    <span id="s4"></span>
+
+                </div>
+
+            </div>
+
+            <div class="button-box">
+
+                <button type="submit" id="registerButton">
+                    Register
+                </button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="register.js"></script>
+
+</body>
+
+</html>

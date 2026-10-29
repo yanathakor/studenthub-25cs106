@@ -1,0 +1,24 @@
+# ---- One-time setup ----
+git config --global user.name  "Feni Kaila"
+git config --global user.email "your-email@example.com"
+
+# ---- In your project folder ----
+cd C:\xampp\htdocs\studenthub
+mkdir assignment_uploads 2>nul & type nul > assignment_uploads\.gitkeep
+
+git init
+git add .
+git commit -m "Practical 15: final integration, testing and documentation"
+
+# ---- Create an empty repo on github.com named "studenthub", then: ----
+git branch -M main
+git remote add origin https://github.com/<your-username>/studenthub.git
+git push -u origin main
+
+# ---- Later updates ----
+git add .
+git commit -m "Describe your change"
+git push
+
+# Tip: export your database again before committing
+# C:\xampp\mysql\bin\mysqldump -u root studenthub > database.sql

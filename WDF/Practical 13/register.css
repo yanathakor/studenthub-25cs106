@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #c9e4ca;
+    color: #364958;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.register-box {
+    width: 850px;
+    background: white;
+    padding: 40px 45px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(54, 73, 88, 0.2);
+    border-top: 5px solid #55828b;
+}
+
+.register-box h1 {
+    text-align: center;
+    color: #364958;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.form-group {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+.field {
+    width: 50%;
+    position: relative;
+}
+
+.field input,
+.field select {
+    width: 100%;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #b7ccc4;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background: white;
+    color: #364958;
+}
+
+.field input:focus,
+.field select:focus {
+    border-color: #55828b;
+    box-shadow: 0 0 5px rgba(85, 130, 139, 0.2);
+}
+
+.field input::placeholder {
+    color: #777;
+}
+
+.field span {
+    display: block;
+    min-height: 20px;
+    margin-top: 4px;
+    color: #d9534f;
+    font-size: 13px;
+}
+
+.password-box input {
+    padding-right: 50px;
+}
+
+.eye-button {
+    position: absolute;
+    right: 8px;
+    top: 5px;
+    width: 38px;
+    height: 38px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.eye-button:hover {
+    background: #c9e4ca;
+    border-radius: 50%;
+}
+
+.button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#registerButton {
+    width: 220px;
+    height: 48px;
+    border: none;
+    border-radius: 8px;
+    background: #364958;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#registerButton:hover {
+    background: #55828b;
+}
+
+.field select {
+    cursor: pointer;
+}
+
+.field select option {
+    color: #364958;
+    background: white;
+}
+
+@media (max-width: 800px) {
+    .register-box {
+        width: 95%;
+        padding: 35px 30px;
+    }
+
+    .form-group {
+        gap: 15px;
+    }
+
+    .register-box h1 {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .register-box {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 0;
+        margin-bottom: 0;
+    }
+
+    .field {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .register-box h1 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    #registerButton {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        padding: 10px;
+    }
+
+    .register-box {
+        padding: 25px 15px;
+    }
+
+    .register-box h1 {
+        font-size: 22px;
+    }
+
+    .field input,
+    .field select {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    #registerButton {
+        height: 45px;
+    }
+}
